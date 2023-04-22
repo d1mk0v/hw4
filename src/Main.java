@@ -8,6 +8,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -91,7 +92,34 @@ public class Main {
             System.out.println("Осталось еще " + (standingPlace - standingPassenger) + " стоячих мест");
         } else
             System.out.println("Стоячих мест нет");
-
-
     }
-}
+    public static void task7() {
+        System.out.println("Задача 7");
+
+        int one = 95;
+        int two = 97;
+        int three = 98;
+
+        if (one > two) {
+            if (one >= three) {
+                System.out.println("Большее число " + one);
+            } else if (three > one) {
+                System.out.println("Большее число " + three);
+            }
+
+        } else if (two > one) {
+            if (two >= three) {
+                System.out.println("Большее число " + two);
+            } else if (three > two) {
+                System.out.println("Большее число " + three);
+            }
+        } else {
+            if (three > one) {
+                System.out.println("Большее число " + three);
+            } else if (one > three) {
+                System.out.println("Большее число " + one);
+            } else
+                System.out.println("Три числа равны");
+        }
+    }
+    }
