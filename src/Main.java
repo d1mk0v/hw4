@@ -7,7 +7,7 @@ public class Main {
         task3();
         task4();
         task5();
-
+        task6();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -73,5 +73,25 @@ public class Main {
         if (age >= 14) {
             System.out.println("Если возраст ребенка равен " + age + " , то он может кататься без сопровождения взрослого");
         }
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        int wagonCapacity = 102;
+        int seatPlace = 60;
+        int standingPlace = wagonCapacity - seatPlace;
+
+        int seatsPassengers = 60;
+        int standingPassenger = 30;
+
+        if (seatPlace > seatsPassengers) {
+            System.out.println("Осталось еще " + (seatPlace - seatsPassengers) + " сидячих мест");
+        } else
+            System.out.println("Сидячих мест нет");
+        if (standingPlace > standingPassenger){
+            System.out.println("Осталось еще " + (standingPlace - standingPassenger) + " стоячих мест");
+        } else
+            System.out.println("Стоячих мест нет");
+
+
     }
 }
